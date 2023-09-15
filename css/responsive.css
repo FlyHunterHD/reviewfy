@@ -1,0 +1,141 @@
+@media screen and (max-width: 767px) {
+
+
+	.top-section {
+		padding-top: 20px;
+	}
+
+	.navbar-nav a {
+	  margin-left: 0;
+	}
+
+	.button1 a {
+	  	margin-left: 0;
+	  	margin-bottom: 10px;
+	}
+
+
+	.button2 a {
+	  margin-left: 0;
+	}
+
+	.bnr-left h1 {
+	  font-size: 40px;
+	}
+
+	.bnr-left h5 {
+	  font-size: 20px;
+	}
+
+	.explore-btn, .works-btn {
+		padding: 12px 28px;
+	}
+
+	.top-img img {
+	  margin-top: 50px;
+	}
+
+
+	.mission-area {
+		margin-top: 150px;
+		padding: 0 15px;
+	}
+
+	.mission-area img {
+		margin-bottom: 40px;
+	}
+
+	.mission-area .row > div:first-child > div {
+		padding-right: 0px;
+	}
+
+	.mission-area .row > div:last-child > div {
+		padding-left: 0px;
+	}
+
+	.msn2 .row {
+		flex-direction: column-reverse;
+	}
+
+	.faq-main {
+		margin-bottom: 60px;
+	}
+
+	.mission-text h2 {
+	  font-size: 46px;
+	}
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+
+.button1 a {
+  margin-bottom: 0px;
+}
+
+.navbar-nav a {
+  font-size: 17px;
+}
+
+.navbar-brand img {
+  width: 140px;
+}
+
+.faq-item .faq-label {
+		padding: 10px 50px 8px 15px;
+		cursor: pointer;
+		font-size: 16px;
+		line-height: 1.2;
+	}
+
+	.faq-cont {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.top-img {
+	  text-align: center;
+	}
+
+	.top-img img {
+	  width: 73%;
+	  margin-top: 50px;
+	}
+
+	.sales {
+	  padding: 18px 15px 18px 15px;
+	}
+
+	.sales-text p {
+	  font-size: 14px;
+	}
+
+	.mission-area {
+	  padding: 0 15px;
+	}
+
+	.mission-area .row > div:first-child > div {
+		padding-right: 0px;
+	}
+
+	.mission-area .row > div:last-child > div {
+		padding-left: 0px;
+	}
+
+	.mission-text h2 {
+	  font-size: 46px;
+	}
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+	.sales-text p {
+	  font-size: 15px;
+	}
+
+}
+
