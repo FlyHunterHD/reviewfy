@@ -1,167 +1,222 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-        <!-- Meta - Setup -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="keywords" content="">
-        <meta name="decription" content="">
+<head>
+    <!-- Meta - Setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 
-        <!-- Title -->
-        <title>About us</title>
+    <!-- Title -->
+    <title>Contact Us</title>
 
-        <!-- Fav - Icon -->
-        <link rel="icon" href="images/fav.png" />
+    <!-- Fav - Icon -->
+    <link rel="icon" href="images/fav.png" />
 
-        <!-- FontAwesome - Link -->
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
-        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css" />
+    <!-- FontAwesome - Link -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css" />
 
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css" />
-        <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
-        <!-- Bootstrap - Link -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- Bootstrap - Link -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-        <!-- Main - Stylesheet -->
-        <link rel="stylesheet"  href="style.css" />
+    <!-- Main - Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- Responsive -->
-        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    </head>
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
-	<body>
+    <!-- Background Gradient -->
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ffffff, #ffdfd1 100%);
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
 
-		<div class="top-section">
-			<!-- nav area start here -->
+        .contact-area {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
 
-			<header class="nav-area">
-				<nav class="navbar navbar-expand-md">
-				  <div class="container">
-				    <a class="navbar-brand" href="index.html"><img src="images/main-logo.svg" alt="image"></a>
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				      <i class="fas fa-bars" style="color: #fff;"></i>
-				    </button>
-				    <div class="collapse navbar-collapse" id="navbarNav">
-					     <ul class="navbar-nav ms-auto" >
-					        <li class="nav-item">
-					          <a class="nav-link" href="index.html">Home</a>
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
 
-					        </li>
-					        <li class="nav-item">
-					          <a class="nav-link" href="pricing.html">Pricing</a>
-					        </li>
-					        <li class="nav-item">
-					          <a class="nav-link" href="about-us.html">About Us</a>
-					        </li>
-					        <li class="nav-item ">
-					          <a class="nav-link contact-btn" href="contact-us.html">Contact Us</a>
-					        </li>
-					        
-					        
-					      </ul>
-				    </div>
-				  </div>
-				</nav>
-			</header>
+        .contact-info li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
 
-			<!-- banner area start here -->
+        .contact-info i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
 
-			<section class="banner-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="bnr-left text-center">
-								<h1>Contact us</h1>
-							</div>
-						</div>
-					</div>
-				</div>
+        .contact-form h2 {
+            font-family: 'Raleway', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
 
-			</section>
-		
-		</div>
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: transparent;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            transition: border-bottom-color 0.3s ease-in-out;
+        }
 
-		<!-- sales area start here -->
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form input[type="text"]:focus,
+        .contact-form textarea:focus {
+            border-bottom-color: #2596be;
+        }
 
-		<section class="sales-area">
-			<img src="images/abt-blue.png" alt="image" class="h-blue" style="bottom: 0;top: initial;">
-			<img src="images/abt-orange.png" alt="image" class="h-orange">
+        .contact-form textarea {
+            resize: none;
+        }
 
-			<!-- mission-area -->
-			<div class="container mission-area msn2">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="mission-text">
-							<h2 class="mb-3">Contact Us Here</h2>
-							<p>At Reviewify, we are passionate about helping businesses and individuals create a positive and trustworthy online image. We understand that in today's digital age, your online reputation can make or break your success. That's why we offer a comprehensive suite of reputation marketing services that help you take control of your brand's image and build trust with your target audience.Our team of experienced reputation marketing experts has a deep understanding of the digital landscape and the strategies required to build and maintain a strong online reputation.</p>
+        .contact-form button {
+            background-color: #2596be;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-							<p>We use cutting-edge tools and techniques to monitor, manage, and improve our clients' online reputation. From monitoring social media platforms to analyzing search engine results, we leave no stone unturned in our pursuit of a positive online image for our clients.We take a personalized approach to reputation marketing, tailoring our services to meet the unique needs of each client. We work closely with our clients to understand their brand values, their goals, and their target audience. Our aim is to help them develop a positive and consistent brand image that resonates with their target audience.</p>
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div class="mission-img text-center">
-							<img src="images/about.png" alt="image" style="width: 100%;">
-						</div>
-					</div>					
-				</div>
-			</div>
+        .contact-form button:hover {
+            background-color: #2075a0;
+        }
+    </style>
+</head>
 
-			<div class="container mission-area mt-0">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mission-text px-0">
-							<p>Our range of reputation marketing services includes everything from reputation monitoring and management to crisis management, review management, and brand enhancement. Whether you're dealing with negative reviews, online defamation, or simply want to enhance your brand's image, we have the expertise and the tools to help you succeed.At Reviewify, we pride ourselves on our commitment to quality and our dedication to helping our clients succeed. We understand that a strong online reputation is essential for long-term success, and we're here to help you achieve your goals. Our team is passionate about what we do, and we believe that our success is measured by the success of our clients.We are constantly evolving and keeping up with the latest trends and techniques in the digital marketing world to ensure that our clients receive the best possible service. Our goal is to help you take your business to the next level by creating a positive and trustworthy online image that sets you apart from your competitors.In summary, if you're looking for a reputation marketing agency that can help you build and maintain a positive online image, look no further than Reviewify. Contact us today to learn more about our reputation marketing services and how we can help you achieve your goals.</p>
-						</div>
-					</div>
-				</div>
-			</div>
+<body>
 
-		</section>
+    <div class="top-section">
+        <!-- nav area start here -->
 
-		<!-- copyright area start -->
+        <header class="nav-area">
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="images/main-logo.svg" alt="image"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" style="color: #fff;"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link contact-btn" href="contact-us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-		<section class="Copyright-area">
-			<div class="container">
-				<div class="content-area">
-					<p>Copyright © 2023</p>
-				</div>
-			</div>
-		</section>
+        <!-- banner area start here -->
 
+        <section class="banner-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bnr-left text-center">
+                            <h1>Contact Us</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </section>
 
+    </div>
 
+    <!-- contact area start here -->
 
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>1234 Elm Street, City Name, Country</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+1 234 567 890</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:noah.herrenapfel@gmail.com">noah.herrenapfel@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h2>Get in Touch</h2>
+                        <form action="https://formsubmit.co/reviewify.business@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea name="message" placeholder="Message" rows="4"></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- copyright area start -->
 
+    <section class="Copyright-area">
+        <div class="container">
+            <div class="content-area">
+                <p>Copyright © 2023</p>
+            </div>
+        </div>
+    </section>
 
-	<!-- Bootstrap - Js -->
-	<script src="js/bootstrap.js"></script>
+    <!-- Bootstrap - Js -->
+    <script src="js/bootstrap.js"></script>
 
-	<!-- Jquery - Js -->
+    <!-- Jquery - Js -->
     <script src="js/jquery.js"></script>
-	
 
-	</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
 
 </html>

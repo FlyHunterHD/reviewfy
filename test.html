@@ -72,26 +72,37 @@
         .contact-form input[type="text"],
         .contact-form textarea {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 15px;
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: transparent;
+            margin-bottom: 20px;
             font-size: 16px;
             font-family: 'Open Sans', Arial, sans-serif;
+            transition: border-bottom-color 0.3s ease-in-out;
+        }
+
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form input[type="text"]:focus,
+        .contact-form textarea:focus {
+            border-bottom-color: #2596be;
         }
 
         .contact-form textarea {
-            resize: vertical;
+            resize: none;
         }
 
         .contact-form button {
             background-color: #2596be;
             color: #fff;
             border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 15px 30px;
+            border-radius: 30px;
             font-size: 18px;
             font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .contact-form button:hover {
@@ -177,11 +188,11 @@
                 <div class="col-md-6">
                     <div class="contact-form">
                         <h2>Get in Touch</h2>
-                        <form action="#" method="post">
-                            <input type="text" name="name" placeholder="Your Name">
-                            <input type="email" name="email" placeholder="Your Email">
+                        <form action="https://formsubmit.co/reviewify.business@gmail.com" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                             <input type="text" name="subject" placeholder="Subject">
-                            <textarea name="message" placeholder="Message"></textarea>
+                            <textarea name="message" placeholder="Message" rows="4"></textarea>
                             <button type="submit">Send Message</button>
                         </form>
                     </div>
