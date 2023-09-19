@@ -2,37 +2,19 @@
 <html>
 
 <head>
-    <!-- Meta - Setup -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
-
-    <!-- Title -->
     <title>Contact Us</title>
-
-    <!-- Fav - Icon -->
     <link rel="icon" href="images/fav.png" />
-
-    <!-- FontAwesome - Link -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css" />
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-
-    <!-- Bootstrap - Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-    <!-- Main - Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-
-    <!-- Background Gradient -->
     <style>
         body {
             background: linear-gradient(to bottom right, #ffffff, #ffdfd1 100%);
@@ -67,6 +49,13 @@
             margin-bottom: 30px;
         }
 
+        .contact-form label {
+            font-size: 16px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin-bottom: 10px;
+            display: block;
+        }
+
         .contact-form input[type="text"],
         .contact-form input[type="email"],
         .contact-form input[type="text"],
@@ -74,19 +63,20 @@
             width: 100%;
             padding: 15px;
             border: none;
-            border-bottom: 1px solid #ccc;
             background-color: transparent;
+            border: 1px solid #ccc;
             margin-bottom: 20px;
             font-size: 16px;
             font-family: 'Open Sans', Arial, sans-serif;
-            transition: border-bottom-color 0.3s ease-in-out;
+            transition: border-color 0.3s ease-in-out;
+            border-radius: 5px;
         }
 
         .contact-form input[type="text"]:focus,
         .contact-form input[type="email"]:focus,
         .contact-form input[type="text"]:focus,
         .contact-form textarea:focus {
-            border-bottom-color: #2596be;
+            border-color: #2596be;
         }
 
         .contact-form textarea {
@@ -98,7 +88,7 @@
             color: #fff;
             border: none;
             padding: 15px 30px;
-            border-radius: 30px;
+            border-radius: 5px;
             font-size: 18px;
             font-weight: 600;
             cursor: pointer;
@@ -112,10 +102,7 @@
 </head>
 
 <body>
-
     <div class="top-section">
-        <!-- nav area start here -->
-
         <header class="nav-area">
             <nav class="navbar navbar-expand-md">
                 <div class="container">
@@ -143,9 +130,6 @@
                 </div>
             </nav>
         </header>
-
-        <!-- banner area start here -->
-
         <section class="banner-area">
             <div class="container">
                 <div class="row">
@@ -156,13 +140,8 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
     </div>
-
-    <!-- contact area start here -->
-
     <section class="contact-area">
         <div class="container">
             <div class="row">
@@ -188,45 +167,29 @@
                 <div class="col-md-6">
                     <div class="contact-form">
                         <h2>Get in Touch</h2>
-                        <form action="https://formsubmit.co/reviewify.business@gmail.com" method="POST">
-
-                            <input type="hidden" name="_captcha" value="true">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="htttps://dainty-sunflower-c7ae18.netlify.app/thank-you.html">
-                            <action="thank-you.html" method="POST">
-
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <input type="text" name="subject" placeholder="Subject" required>
-                            <textarea name="message" placeholder="Message" rows="4"></textarea>
-                            <button type="submit">Send Message</button>
+                        <form action="https://formsubmit.co/reviewify.business@email.com" method="POST">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="subject">Subject:</label>
+                            <input type="text" name="subject" id="subject" required>
+                            <label for="message">Your Message:</label>
+                            <textarea name="message" id="message" rows="4" required></textarea>
+                            <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-    <!-- copyright area start -->
-
     <section class="Copyright-area">
         <div class="container">
             <div class="content-area">
-                <p>Copyright © 2023</p>
+                <p>&copy; 2023</p>
             </div>
         </div>
     </section>
-
-    <!-- Bootstrap - Js -->
     <script src="js/bootstrap.js"></script>
-
-    <!-- Jquery - Js -->
     <script src="js/jquery.js"></script>
-
 </body>
 
 </html>
